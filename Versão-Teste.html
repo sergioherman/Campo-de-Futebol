@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo de Futebol</title>
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+        }
+        header#cabecalho{
+            border-bottom: 3px solid;
+            color: black;
+            text-align: center;
+            padding: 0px;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+        #areaverde{
+            width: 200mm;
+            height: 110mm;
+            /* border: solid black 1px; */
+            background-color: rgb(55, 115, 25);
+            margin: auto;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+        }
+        #contornobranco{
+            width: 180mm;
+            height: 90mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            margin: auto;
+            position: relative;
+            top: 9.5mm;
+        }
+        #golesquerda{
+            width: 4.9mm;
+            height: 14.6mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-right: transparent;
+            position: relative;
+            top: -44mm;
+            left: 4.3mm;
+        }
+        #goldireita{
+            width: 4.9mm;
+            height: 14.6mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-left: transparent;
+            position: relative;
+            top: -59.4mm;
+            left: 190.4mm;
+        }
+        #metadeesquerda{
+            width: 89.8mm;
+            height: 90.3mm;
+            border-right: solid .4mm rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: -111.6mm;
+            left: 10mm;
+        }
+        #metadedireita{
+            width: 89.8mm;
+            height: 90.3mm;
+            position: relative;
+            top: -201.8mm;
+            left: 100.2mm;
+            
+        }
+        #circulocentral {
+            width: 36.60mm;
+            height: 36.60mm;
+            border-radius: 50%;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: -265.6mm;
+            left: 82.1mm;
+        }
+        #pontocentral {
+            width: 1.5mm;
+            height: 1.5mm;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: 16.8mm;
+            left: 16.8mm;
+        }
+        #meialuaesquerda {
+            position: relative;
+            top: -305.5mm;
+            left: 43.4mm;
+            height: 40mm;
+            width: 19.7mm;
+            overflow: hidden;
+        }
+        #meialuaesquerda:before {
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            content: "";
+            position: absolute;
+            right: 14mm;
+            height: 36.6mm;
+            width: 36.6mm;
+            border-radius: 50%;
+            bottom: 0;
+        }
+        #grandeareaesquerda{
+            width: 33mm;
+            height: 70mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-left: transparent;
+            position: relative;
+            top: 9.5mm;
+        }
+        #pequenaareaesquerda {
+            width: 11mm;
+            height: 36mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-left: transparent;
+            position: relative;
+            top: 16.5mm;
+        }
+        #pontopenaltiesquerda{
+            width: 1.5mm;
+            height: 1.5mm;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: -2.9mm;
+            left: 22mm;
+        }
+        #grandeareadireita{
+            width: 33mm;
+            height: 70mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-right: transparent;
+            position: relative;
+            top: 9.5mm;
+            left: 56.4mm;
+        }
+        #pequenaareadireita {
+            width: 11mm;
+            height: 36mm;
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            border-right: transparent;
+            position: relative;
+            top: 16.5mm;
+            left: 21.6mm;
+        }
+        #meialuadireita {
+            position: relative;
+            top: -22.8mm;
+            left: -20.1mm;
+            height: 40mm;
+            width: 19.7mm;
+            overflow: hidden;
+            /* border: tomato solid; */
+        }
+        #meialuadireita:before {
+            border: solid .4mm rgba(255, 255, 255, 0.5);
+            content: "";
+            position: absolute;
+            right: -24mm; /* posição a ser ajustada*/
+            height: 36.6mm;
+            width: 36.6mm;
+            border-radius: 50%;
+            bottom: 0;
+        }
+        #pontopenaltidireita {
+            width: 1.5mm;
+            height: 1.5mm;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: -43mm;
+            left: 10mm;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <h1>Campo de Futebol</h1>
+    </header>
+    <section id="areaverde">
+        <div id="contornobranco"></div>
+        <div id="golesquerda"></div>
+        <div id="goldireita"></div>
+        <div id="metadeesquerda">
+            <div id="grandeareaesquerda">
+                <div id="pequenaareaesquerda"></div>
+                <div id="pontopenaltiesquerda"></div>
+            </div>
+        </div>
+        <div id="metadedireita">
+            <div id="grandeareadireita">
+                <div id="pequenaareadireita"></div>
+                <div id="meialuadireita"></div>
+                <div id="pontopenaltidireita"></div>
+            </div>
+        </div>
+        <div id="circulocentral">
+            <div id="pontocentral"></div>
+        </div>
+        <div id="meialuaesquerda"></div>
+    </section>
+    <footer>
+        Sergio Herman<br/>
+        e-mail: sergiohermanbl@gmail.com
+    </footer>
+</body>
+</html>

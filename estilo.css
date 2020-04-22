@@ -1,0 +1,49 @@
+
+/* ---------------------------------------------------- */
+body{
+    background-color: gray;
+    color: white;
+}
+header#cabecalho{
+    border-bottom: 3px solid;
+    color: black;
+}
+body section#campo div#metcima{
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    margin: auto;
+    border: 3px solid;
+    width: 90mm;
+    height: 60mm;
+}
+
+body div#areas{
+    display: block;
+}
+
+body aside#as1{
+    border: 3px solid;
+    width: 40mm;
+    height: 16mm;
+    margin: auto;
+}
+
+body aside#as2{
+    border: 3px solid;
+    width: 10mm;
+    height: 10mm;
+    margin: -7.5mm auto 0px auto;
+    border-radius: 10mm;
+}
+
+body section#campo div#metbaixo{
+    margin: auto;
+    border: 3px solid;
+    width: 90mm;
+    height: 60mm;
+    margin-top: -3px;
+}
+/* ---------------------------------------------------- */
+footer{
+    text-align: center;
+}
