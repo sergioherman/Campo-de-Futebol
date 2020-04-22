@@ -230,6 +230,60 @@ header#cabecalho{
     bottom: 0px;
     right: 0px;
 }
+#golesq{
+    width: 15px;
+    height: 35px;
+    border: solid white 2px;
+    position: absolute;
+    border-right: hidden;
+    top: 50%;
+    transform: translate(-100%,-50%);
+}
+#goldir{
+    width: 15px;
+    height: 35px;
+    border: solid white 2px;
+    position: absolute;
+    border-left: hidden;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%,-50%);
+}
+#listra1{
+    width: 10%;
+    height: 375px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 5%;
+}
+#listra2{
+    width: 10%;
+    height: 375px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 25%;
+}
+#listra3{
+    width: 10%;
+    height: 375px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 45%;
+}
+#listra4{
+    width: 10%;
+    height: 375px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 65%;
+}
+#listra5{
+    width: 10%;
+    height: 375px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 85%;
+}
 footer{
     padding: 20px;
     text-align: center;
